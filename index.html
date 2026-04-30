@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabor Colombiano | Comida típica</title>
+    <meta name="description" content="Sabor Colombiano: restaurante de comida típica con menú, horarios y reservas en línea." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a class="brand" href="#inicio">Sabor Colombiano</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
+        <ul id="menu" class="nav-links">
+          <li><a href="#platos">Platos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero-content container">
+        <h1>Auténtico sabor colombiano en cada bocado</h1>
+        <p>Disfruta bandeja paisa, arepas, empanadas y jugos naturales hechos al momento.</p>
+        <a class="btn" href="#reservas">Reservar mesa</a>
+      </section>
+    </header>
+
+    <main>
+      <section id="platos" class="section container">
+        <h2>Platos destacados</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Bandeja paisa</h3>
+            <p>Frijoles, arroz, chicharrón, carne molida, huevo, aguacate y arepa.</p>
+            <span class="price">$17.99</span>
+          </article>
+          <article class="card">
+            <h3>Ajiaco santafereño</h3>
+            <p>Sopa tradicional con papa criolla, pollo, mazorca y alcaparras.</p>
+            <span class="price">$14.50</span>
+          </article>
+          <article class="card">
+            <h3>Empanadas colombianas</h3>
+            <p>Masa de maíz rellena de papa y carne, acompañada de ají casero.</p>
+            <span class="price">$8.00</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="nosotros" class="section section-alt">
+        <div class="container two-col">
+          <div>
+            <h2>Nuestra historia</h2>
+            <p>Somos una familia colombiana que lleva más de 10 años compartiendo recetas tradicionales y atención cálida.</p>
+            <p>Trabajamos con ingredientes frescos y proveedores locales para mantener la mejor calidad.</p>
+          </div>
+          <ul class="highlights" aria-label="Ventajas del restaurante">
+            <li>✅ Opciones vegetarianas</li>
+            <li>✅ Domicilios en la ciudad</li>
+            <li>✅ Eventos y catering</li>
+            <li>✅ Música y ambiente familiar</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="reservas" class="section container">
+        <h2>Reserva tu mesa</h2>
+        <form id="reservation-form" novalidate>
+          <label>
+            Nombre
+            <input type="text" name="name" required minlength="2" />
+          </label>
+          <label>
+            Correo
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Fecha
+            <input type="date" name="date" required />
+          </label>
+          <label>
+            Personas
+            <input type="number" name="guests" min="1" max="20" required />
+          </label>
+          <button class="btn" type="submit">Enviar reserva</button>
+          <p id="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer id="contacto" class="footer">
+      <div class="container">
+        <p><strong>Sabor Colombiano</strong> · 123 Calle Principal, Miami, FL</p>
+        <p>📞 (305) 555-1234 · ✉️ hola@saborcolombiano.com</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html
